@@ -1,7 +1,9 @@
----
-title: "Time series of COVID-19 Case Fatality Ratios (CFR) in Canada"
-output: github_document
----
+___
+
+# Time series of COVID-19 Case Fatality Ratios (CFR) in Canada
+
+___ 
+
                                                                                                          
    Written by: Jessica Yu, 2021.                                                                         
                j.yu@ubc.ca                                                                               
@@ -101,6 +103,8 @@ p <- dygraph(p_data, main = "Case Fatality Ratios in Canada (January 2020-July 2
 p
 ```
 
+<img src='img/time_series_key_dates.png' />
+
 ### Plot CFRs and COVID-19 testing with dual Y axis
 Be careful of interpretation of cumulative covid testing given that people can be tested multiple times.
 
@@ -137,6 +141,8 @@ ggplot(p_data2, aes(x=date)) +
 
 ```
 
+<img src='img/cfr_testing.png' />
+
 
 ### Plot CFRs and COVID-19 administered vaccines with dual Y axis (log scale)
 
@@ -165,3 +171,5 @@ ggplot(p_data2, aes(x=date)) +
 
   ggtitle("Case fatality ratios and COVID-19 administered vaccines")
 ```
+
+<img src='img/cfr_vaccines.png' />
